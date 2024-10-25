@@ -196,6 +196,9 @@ func Main(archInit func(*ssagen.ArchInfo)) {
 	typecheck.InitRuntime()
 	rttype.Init()
 
+	// Set up preprocessor
+	//???
+
 	// Parse and typecheck input.
 	noder.LoadPackage(flag.Args())
 

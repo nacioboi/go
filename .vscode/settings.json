@@ -1,0 +1,8 @@
+{
+	"go.goroot": "/home/user/Documents/Programming-Projects/go",
+	"go.useGoProxy": false,
+	"go.toolsManagement.autoUpdate": false,
+	"go.lintFlags": [
+	    "-checks=-S1002"
+	],
+}

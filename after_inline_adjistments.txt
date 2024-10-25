@@ -1,0 +1,550 @@
+GOROOT: /home/user/Documents/Programming-Projects/go
+GOROOT_BOOTSTRAP: /usr/lib/go-1.23
+
+We need to make sure the set-aside binary is the correct name for use by the toolchain...
+Please provide priviledges for a rename of `/usr/lib/go-1.23/bin/goftw` to `/usr/lib/go-1.23/bin/go`
+Done.
+
+Building Go cmd/dist using /usr/lib/go-1.23. (go1.23.1 linux/amd64)
+Building Go toolchain1 using /usr/lib/go-1.23.
+Building Go bootstrap cmd/go (go_bootstrap) using Go toolchain1.
+Building Go toolchain2 using go_bootstrap and Go toolchain1.
+Building Go toolchain3 using go_bootstrap and Go toolchain2.
+Building packages and commands for linux/amd64.
+
+##### Test execution environment.
+# GOARCH: amd64
+# CPU: AMD Ryzen 5 7600 6-Core Processor              
+# GOOS: linux
+# OS Version: Linux 6.8.0-47-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 21:40:26 UTC 2024 x86_64
+
+##### Testing packages.
+ok  	archive/tar	0.521s
+ok  	archive/zip	0.622s
+ok  	bufio	0.300s
+ok  	bytes	0.339s
+ok  	cmp	0.015s
+ok  	compress/bzip2	0.139s
+ok  	compress/flate	2.286s
+ok  	compress/gzip	1.739s
+ok  	compress/lzw	0.026s
+ok  	compress/zlib	0.178s
+ok  	container/heap	0.022s
+ok  	container/list	0.022s
+ok  	container/ring	0.033s
+ok  	context	0.073s
+ok  	crypto	1.507s
+ok  	crypto/aes	0.027s
+ok  	crypto/cipher	0.018s
+ok  	crypto/des	0.018s
+ok  	crypto/dsa	0.019s
+ok  	crypto/ecdh	0.120s
+ok  	crypto/ecdsa	0.058s
+ok  	crypto/ed25519	0.159s
+ok  	crypto/elliptic	0.025s
+ok  	crypto/hmac	0.029s
+ok  	crypto/internal/alias	0.015s
+ok  	crypto/internal/bigmod	0.178s
+ok  	crypto/internal/boring	0.016s
+ok  	crypto/internal/boring/bcache	0.365s
+ok  	crypto/internal/edwards25519	0.112s
+ok  	crypto/internal/edwards25519/field	0.060s
+ok  	crypto/internal/hpke	0.069s
+ok  	crypto/internal/mlkem768	0.364s
+ok  	crypto/internal/nistec	0.284s
+ok  	crypto/internal/nistec/fiat	0.053s [no tests to run]
+ok  	crypto/md5	0.063s
+ok  	crypto/rand	0.179s
+ok  	crypto/rc4	0.112s
+ok  	crypto/rsa	0.492s
+ok  	crypto/sha1	0.111s
+ok  	crypto/sha256	0.015s
+ok  	crypto/sha512	0.018s
+ok  	crypto/subtle	0.258s
+ok  	crypto/tls	1.434s
+ok  	crypto/x509	0.813s
+ok  	database/sql	0.841s
+ok  	database/sql/driver	0.002s
+ok  	debug/buildinfo	0.012s
+ok  	debug/dwarf	0.030s
+ok  	debug/elf	0.393s
+ok  	debug/gosym	0.881s
+ok  	debug/macho	0.013s
+ok  	debug/pe	0.018s
+ok  	debug/plan9obj	0.004s
+ok  	embed	0.034s [no tests to run]
+ok  	embed/internal/embedtest	0.022s
+ok  	encoding/ascii85	0.093s
+ok  	encoding/asn1	0.027s
+ok  	encoding/base32	0.098s
+ok  	encoding/base64	0.011s
+ok  	encoding/binary	0.059s
+ok  	encoding/csv	0.047s
+ok  	encoding/gob	3.776s
+ok  	encoding/hex	0.045s
+ok  	encoding/json	0.776s
+ok  	encoding/pem	1.181s
+ok  	encoding/xml	0.201s
+ok  	errors	0.029s
+ok  	expvar	0.065s
+ok  	flag	0.324s
+ok  	fmt	0.102s
+ok  	go/ast	0.021s
+ok  	go/build	5.127s
+ok  	go/build/constraint	0.068s
+ok  	go/constant	0.039s
+ok  	go/doc	0.066s
+ok  	go/doc/comment	2.024s
+ok  	go/format	0.034s
+ok  	go/importer	0.753s
+ok  	go/internal/gccgoimporter	0.041s
+ok  	go/internal/gcimporter	6.264s
+ok  	go/internal/srcimporter	16.572s
+ok  	go/parser	0.569s
+ok  	go/printer	0.538s
+ok  	go/scanner	0.089s
+ok  	go/token	0.031s
+ok  	go/types	20.578s
+ok  	go/version	0.012s
+ok  	hash	0.010s
+ok  	hash/adler32	0.016s
+ok  	hash/crc32	0.028s
+ok  	hash/crc64	0.016s
+ok  	hash/fnv	0.023s
+ok  	hash/maphash	0.308s
+ok  	html	0.033s
+ok  	html/template	0.264s
+ok  	image	0.187s
+ok  	image/color	0.062s
+ok  	image/draw	0.197s
+ok  	image/gif	0.580s
+ok  	image/jpeg	0.395s
+ok  	image/png	0.456s
+ok  	index/suffixarray	0.709s
+ok  	internal/abi	0.235s
+ok  	internal/buildcfg	0.027s
+ok  	internal/chacha8rand	0.023s
+ok  	internal/concurrent	0.229s
+ok  	internal/coverage/cfile	2.271s
+ok  	internal/coverage/cformat	0.019s
+ok  	internal/coverage/cmerge	0.016s
+ok  	internal/coverage/pods	0.015s
+ok  	internal/coverage/slicereader	0.009s
+ok  	internal/coverage/slicewriter	0.011s
+ok  	internal/coverage/test	0.036s
+ok  	internal/cpu	0.034s
+ok  	internal/dag	0.015s
+ok  	internal/diff	0.014s
+ok  	internal/fmtsort	0.023s
+ok  	internal/fuzz	0.029s
+ok  	internal/godebug	2.430s
+ok  	internal/godebugs	10.287s
+ok  	internal/gover	0.026s
+ok  	internal/itoa	0.040s
+ok  	internal/platform	3.182s
+ok  	internal/poll	0.256s
+ok  	internal/profile	0.006s
+ok  	internal/reflectlite	0.015s
+ok  	internal/runtime/atomic	0.066s
+ok  	internal/runtime/syscall	0.005s
+ok  	internal/saferio	0.214s
+ok  	internal/singleflight	0.057s
+ok  	internal/syscall/unix	0.022s
+ok  	internal/sysinfo	0.019s
+ok  	internal/testenv	0.815s
+ok  	internal/trace	57.181s
+ok  	internal/trace/internal/oldtrace	0.547s
+ok  	internal/types/errors	1.508s
+ok  	internal/unsafeheader	0.021s
+ok  	internal/weak	0.255s
+ok  	internal/xcoff	0.024s
+ok  	internal/zstd	1.845s
+ok  	io	0.225s
+ok  	io/fs	0.345s
+ok  	io/ioutil	0.032s
+ok  	iter	0.036s
+ok  	log	0.058s
+ok  	log/slog	0.170s
+ok  	log/slog/internal/benchmarks	0.017s
+ok  	log/slog/internal/buffer	0.022s
+ok  	log/syslog	1.260s
+ok  	maps	0.014s
+ok  	math	0.062s
+ok  	math/big	1.547s
+ok  	math/bits	0.067s
+ok  	math/cmplx	0.029s
+ok  	math/rand	0.316s
+ok  	math/rand/v2	0.563s
+ok  	mime	0.016s
+ok  	mime/multipart	2.394s
+ok  	mime/quotedprintable	0.125s
+ok  	net	19.032s
+ok  	net/http	13.570s
+ok  	net/http/cgi	1.026s
+ok  	net/http/cookiejar	0.076s
+ok  	net/http/fcgi	0.290s
+ok  	net/http/httptest	0.183s
+ok  	net/http/httptrace	0.030s
+ok  	net/http/httputil	1.025s
+ok  	net/http/internal	0.460s
+ok  	net/http/internal/ascii	0.047s
+ok  	net/http/pprof	5.484s
+ok  	net/internal/cgotest	0.055s
+ok  	net/internal/socktest	0.111s
+ok  	net/mail	0.042s
+ok  	net/netip	1.374s
+ok  	net/rpc	0.086s
+ok  	net/rpc/jsonrpc	0.035s
+ok  	net/smtp	0.082s
+ok  	net/textproto	0.205s
+ok  	net/url	0.015s
+ok  	os	2.450s
+ok  	os/exec	0.983s
+ok  	os/exec/internal/fdtest	0.014s
+ok  	os/signal	5.804s
+ok  	os/user	0.021s
+ok  	path	0.024s
+ok  	path/filepath	0.104s
+ok  	plugin	0.038s
+ok  	reflect	2.551s
+ok  	regexp	2.025s
+ok  	regexp/syntax	2.123s
+--- FAIL: TestFunctionAlignmentTraceback (0.00s)
+    symtab_test.go:242: PC 9977847 code got 0x0 want 0xcc
+--- FAIL: TestGdbAutotmpTypes (12.27s)
+    runtime-gdb_test.go:78: gdb version 15.0
+    runtime-gdb_test.go:569: gdb output:
+        Loading Go Runtime support.
+        Target 'exec' cannot support this command.
+        Breakpoint 1 at 0x46e796: file /tmp/TestGdbAutotmpTypes1411578874/001/main.go, line 8.
+        
+        This GDB supports auto-downloading debuginfo from the following URLs:
+          <https://debuginfod.ubuntu.com>
+        Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+        Debuginfod has been disabled.
+        To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+        [New LWP 174314]
+        [New LWP 174328]
+        [New LWP 174339]
+        
+        Thread 1 "a.exe" hit Breakpoint 1, main.main () at /tmp/TestGdbAutotmpTypes1411578874/001/main.go:8
+        8	func main() {
+        9		var iface interface{} = map[string]astruct{}
+        All types matching regular expression "astruct":
+        
+        File runtime:
+        	[]main.astruct
+        	bucket<string,main.astruct>
+        	hash<string,main.astruct>
+        	main.astruct
+        	typedef hash<string,main.astruct> * map[string]main.astruct;
+        	typedef noalg.[8]main.astruct noalg.[8]main.astruct;
+        	noalg.map.bucket[string]main.astruct
+    runtime-gdb_test.go:586: could not find []main.astruct; in 'info typrs astruct' output
+FAIL
+FAIL	runtime	183.169s
+ok  	runtime/cgo	0.025s
+ok  	runtime/debug	0.547s
+ok  	runtime/internal/math	0.006s
+ok  	runtime/internal/sys	0.024s
+ok  	runtime/internal/wasitest	0.032s
+ok  	runtime/metrics	0.046s
+--- FAIL: TestTryAdd (0.13s)
+    --- FAIL: TestTryAdd/recursion_chain_inline (0.00s)
+        pprof_test.go:2377: Profile: PeriodType: cpu nanoseconds
+            Period: 2000000
+            Time: 2024-10-25 01:02:03.287124406 +1000 AEST
+            Duration: 83.258µs
+            Samples:
+            samples/count cpu/nanoseconds
+                     10   20000000: 1 2 
+            Locations
+                 1: 0x576005 M=1 runtime/pprof.recursionChainBottom /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:400 s=397
+                         runtime/pprof.recursionChainMiddle /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:394 s=393
+                         runtime/pprof.recursionChainTop /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:390 s=386
+                 2: 0x5875d0 M=1 runtime/pprof.recursionChainBottom /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:402 s=397
+                         runtime/pprof.recursionChainMiddle /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:394 s=393
+                         runtime/pprof.recursionChainTop /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:390 s=386
+                         runtime/pprof.TestTryAdd /home/user/Documents/Programming-Projects/go/src/runtime/pprof/pprof_test.go:2198 s=2171
+            Mappings
+            1: 0x400000/0x5a8000/0x0 /tmp/go-build2562932007/b1671/pprof.test  [FN]
+            2: 0x7ffd8263b000/0x7ffd8263d000/0x0 [vdso]  
+            3: 0xffffffffff600000/0xffffffffff601000/0x0 [vsyscall]  
+            
+        pprof_test.go:2389: Got Location = [
+            	[
+            		"runtime/pprof.recursionChainBottom",
+            		"runtime/pprof.recursionChainMiddle",
+            		"runtime/pprof.recursionChainTop"
+            	],
+            	[
+            		"runtime/pprof.recursionChainBottom",
+            		"runtime/pprof.recursionChainMiddle",
+            		"runtime/pprof.recursionChainTop",
+            		"runtime/pprof.TestTryAdd"
+            	]
+            ]
+            	want [
+            	[
+            		"runtime/pprof.recursionChainBottom"
+            	],
+            	[
+            		"runtime/pprof.recursionChainMiddle",
+            		"runtime/pprof.recursionChainTop",
+            		"runtime/pprof.recursionChainBottom"
+            	],
+            	[
+            		"runtime/pprof.recursionChainMiddle",
+            		"runtime/pprof.recursionChainTop",
+            		"runtime/pprof.TestTryAdd"
+            	]
+            ]
+        pprof_test.go:2401: Got Samples = [
+            	{
+            		"Location": [
+            			{
+            				"ID": 1,
+            				"Mapping": null,
+            				"Address": 0,
+            				"Line": null,
+            				"IsFolded": false
+            			},
+            			{
+            				"ID": 2,
+            				"Mapping": null,
+            				"Address": 0,
+            				"Line": null,
+            				"IsFolded": false
+            			}
+            		],
+            		"Value": [
+            			10,
+            			20000000
+            		],
+            		"Label": null,
+            		"NumLabel": null,
+            		"NumUnit": null
+            	}
+            ]
+            	want [
+            	{
+            		"Location": [
+            			{
+            				"ID": 1,
+            				"Mapping": null,
+            				"Address": 0,
+            				"Line": null,
+            				"IsFolded": false
+            			},
+            			{
+            				"ID": 2,
+            				"Mapping": null,
+            				"Address": 0,
+            				"Line": null,
+            				"IsFolded": false
+            			},
+            			{
+            				"ID": 3,
+            				"Mapping": null,
+            				"Address": 0,
+            				"Line": null,
+            				"IsFolded": false
+            			}
+            		],
+            		"Value": [
+            			10,
+            			20000000
+            		],
+            		"Label": null,
+            		"NumLabel": null,
+            		"NumUnit": null
+            	}
+            ]
+FAIL
+FAIL	runtime/pprof	29.286s
+ok  	runtime/trace	0.336s
+ok  	slices	0.501s
+ok  	sort	0.052s
+ok  	strconv	0.510s
+ok  	strings	0.248s
+ok  	sync	1.117s
+ok  	sync/atomic	2.307s
+ok  	syscall	9.385s
+ok  	testing	5.067s
+ok  	testing/fstest	0.011s
+ok  	testing/iotest	0.016s
+ok  	testing/quick	0.276s
+ok  	testing/slogtest	0.055s
+ok  	text/scanner	0.021s
+ok  	text/tabwriter	0.002s
+ok  	text/template	0.113s
+ok  	text/template/parse	0.035s
+ok  	time	19.654s
+ok  	unicode	0.029s
+ok  	unicode/utf16	0.042s
+ok  	unicode/utf8	0.044s
+ok  	unique	0.743s
+ok  	cmd/addr2line	2.347s
+ok  	cmd/api	58.259s
+ok  	cmd/asm/internal/asm	1.132s
+ok  	cmd/asm/internal/lex	0.035s
+ok  	cmd/cgo/internal/swig	0.103s
+ok  	cmd/cgo/internal/test	1.529s
+ok  	cmd/cgo/internal/testcarchive	0.016s
+ok  	cmd/cgo/internal/testcshared	0.009s
+ok  	cmd/cgo/internal/testerrors	50.841s
+ok  	cmd/cgo/internal/testfortran	0.075s
+ok  	cmd/cgo/internal/testgodefs	3.077s
+ok  	cmd/cgo/internal/testlife	2.895s
+ok  	cmd/cgo/internal/testnocgo	0.021s
+ok  	cmd/cgo/internal/testplugin	0.028s
+ok  	cmd/cgo/internal/testsanitizers	74.588s
+ok  	cmd/cgo/internal/testshared	0.029s
+ok  	cmd/cgo/internal/testso	5.295s
+ok  	cmd/cgo/internal/teststdio	4.725s
+ok  	cmd/cgo/internal/testtls	0.123s
+ok  	cmd/compile/internal/abt	0.038s
+ok  	cmd/compile/internal/amd64	8.230s
+ok  	cmd/compile/internal/base	0.004s
+ok  	cmd/compile/internal/compare	0.005s
+ok  	cmd/compile/internal/devirtualize	0.003s
+ok  	cmd/compile/internal/dwarfgen	0.959s
+ok  	cmd/compile/internal/importer	4.568s
+--- FAIL: TestDumpCallSiteScoreDump (0.11s)
+    dumpscores_test.go:36: run: [/home/user/Documents/Programming-Projects/go/bin/go build -gcflags=-d=dumpinlcallsitescores=1 -o /tmp/TestDumpCallSiteScoreDump2487862930/001/dumpscores.a testdata/dumpscores.go]
+    dumpscores_test.go:64: testcase "dumpscores", got 0 promoted want 1 promoted
+    dumpscores_test.go:69: testcase "dumpscores", got 0 indirectly promoted want 1
+    dumpscores_test.go:74: testcase "dumpscores", got 0 demoted want 1 demoted
+    dumpscores_test.go:79: testcase "dumpscores", got 8 unchanged want 5 unchanged
+    dumpscores_test.go:84: >> dump output: # command-line-arguments
+        # scores for package command-line-arguments
+        # Score  Adjustment  Status  Callee  CallerPos Flags ScoreFlags
+        -10  -65	---	·inlinable	dumpscores.go:34:17|5	passConstToIfAdj|passInlinableFuncToIndCallAdj
+        25  0	---	·inlinable2	dumpscores.go:34:17|dumpscores.go:14:10|0	
+        49  0	---	·big	dumpscores.go:30:13|0	
+        49  0	---	·big	dumpscores.go:30:17|1	
+        49  0	---	·big	dumpscores.go:30:21|2	
+        49  0	---	·big	dumpscores.go:30:25|3	
+        49  0	---	·big	dumpscores.go:30:29|4	
+        65  40	---	·inlinable2	dumpscores.go:38:19|6	panicPathAdj
+--- FAIL: TestFuncProperties (1.55s)
+    funcprops_test.go:130: testcase "funcflags" callsite "funcflags.go:286:18|0" in func "T_exitinexpr": got P=CallSiteOnPanicPath|S=65|M=panicPathAdj want P=CallSiteOnPanicPath|S=102|M=panicPathAdj
+    funcprops_test.go:130: testcase "funcflags" callsite "funcflags.go:335:15|0" in func "T_calls_callsexit": got P=CallSiteOnPanicPath|S=65|M=panicPathAdj want P=CallSiteOnPanicPath|S=102|M=panicPathAdj
+    funcprops_test.go:130: testcase "acrosscall" callsite "acrosscall.go:20:12|0" in func "T_feeds_indirect_call_via_call_toplevel": got P=|S=23|M= want P=|S=60|M=
+    funcprops_test.go:130: testcase "acrosscall" callsite "acrosscall.go:33:13|0" in func "T_feeds_indirect_call_via_call_conditional": got P=|S=23|M= want P=|S=60|M=
+    funcprops_test.go:130: testcase "acrosscall" callsite "acrosscall.go:46:23|0" in func "T_feeds_conditional_indirect_call_via_call_toplevel": got P=|S=27|M= want P=|S=64|M=
+    funcprops_test.go:130: testcase "acrosscall" callsite "acrosscall.go:98:12|0" in func "T_multifeeds1": got P=|S=23|M= want P=|S=60|M=
+    funcprops_test.go:130: testcase "acrosscall" callsite "acrosscall.go:99:23|1" in func "T_multifeeds1": got P=|S=27|M= want P=|S=64|M=
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:77:12|2" in func "T_calls_on_panic_paths": got P=CallSiteOnPanicPath|S=65|M=panicPathAdj want P=CallSiteOnPanicPath|S=102|M=panicPathAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:119:12|3" in func "T_calls_not_on_panic_paths": got P=CallSiteOnPanicPath|S=65|M=panicPathAdj want P=CallSiteOnPanicPath|S=102|M=panicPathAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:141:19|0" in func "T_pass_inlinable_func_to_param_feeding_indirect_call": got P=|S=-21|M=passInlinableFuncToIndCallAdj want P=|S=16|M=passInlinableFuncToIndCallAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:153:19|0" in func "T_pass_noninlinable_func_to_param_feeding_indirect_call": got P=|S=-1|M=passFuncToIndCallAdj want P=|S=36|M=passFuncToIndCallAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:166:25|0" in func "T_pass_inlinable_func_to_param_feeding_nested_indirect_call": got P=|S=-10|M=passInlinableFuncToNestedIndCallAdj want P=|S=27|M=passInlinableFuncToNestedIndCallAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:178:25|0" in func "T_pass_noninlinable_func_to_param_feeding_nested_indirect_call": got P=|S=10|M=passFuncToNestedIndCallAdj want P=|S=47|M=passFuncToNestedIndCallAdj
+    funcprops_test.go:130: testcase "calls" callsite "calls.go:212:19|2" in func "T_call_scoring_in_noninlinable_func": got P=|S=-21|M=passInlinableFuncToIndCallAdj want P=|S=16|M=passInlinableFuncToIndCallAdj
+FAIL
+FAIL	cmd/compile/internal/inline/inlheur	1.666s
+ok  	cmd/compile/internal/ir	0.012s
+ok  	cmd/compile/internal/liveness	0.058s
+ok  	cmd/compile/internal/logopt	1.203s
+ok  	cmd/compile/internal/loopvar	99.258s
+ok  	cmd/compile/internal/noder	0.013s
+ok  	cmd/compile/internal/rangefunc	0.035s
+ok  	cmd/compile/internal/reflectdata	0.033s [no tests to run]
+ok  	cmd/compile/internal/ssa	101.280s
+ok  	cmd/compile/internal/syntax	0.229s
+--- FAIL: TestPGOHash (4.06s)
+    pgo_inl_test.go:40: /home/user/Documents/Programming-Projects/go/bin/go test -c -o /tmp/TestPGOHash1896972310/001/test.exe -gcflags=-pgoprofile=/tmp/TestPGOHash1896972310/001/inline_hot.pprof -trimpath /tmp/TestPGOHash1896972310/001=>example.com/pgo/inline -d=pgoinlinebudget=160,pgoinlinecdfthreshold=90,pgodebug=1,pgohash=v1
+    pgo_inl_test.go:357: output does not contain expected source line, out:
+        # example.com/pgo/inline [example.com/pgo/inline.test]
+        hot-callsite-thres-from-CDF=95.55555555555556
+        hot-node enabled increased budget=160 for func=example.com/pgo/inline.(*BS).NS
+        # example.com/pgo/inline.test
+        hot-callsite-thres-from-CDF=95.55555555555556
+    pgo_inl_test.go:40: /home/user/Documents/Programming-Projects/go/bin/go test -c -o /tmp/TestPGOHash1896972310/001/test.exe -gcflags=-pgoprofile=/tmp/TestPGOHash1896972310/001/inline_hot.pprof -trimpath /tmp/TestPGOHash1896972310/001=>example.com/pgo/inline -d=pgoinlinebudget=160,pgoinlinecdfthreshold=90,pgodebug=1,pgohash=v0
+FAIL
+FAIL	cmd/compile/internal/test	19.427s
+ok  	cmd/compile/internal/typecheck	1.388s
+ok  	cmd/compile/internal/types	0.039s
+ok  	cmd/compile/internal/types2	22.601s
+ok  	cmd/covdata	0.017s
+ok  	cmd/cover	5.854s
+ok  	cmd/dist	0.027s
+ok  	cmd/distpack	0.017s
+ok  	cmd/doc	0.298s
+ok  	cmd/fix	7.336s
+ok  	cmd/go	140.851s
+ok  	cmd/go/internal/auth	0.015s
+ok  	cmd/go/internal/cache	0.254s
+ok  	cmd/go/internal/cfg	0.011s [no tests to run]
+ok  	cmd/go/internal/envcmd	0.116s
+ok  	cmd/go/internal/fsys	0.158s
+ok  	cmd/go/internal/generate	0.131s
+ok  	cmd/go/internal/gover	0.039s
+ok  	cmd/go/internal/imports	0.039s
+ok  	cmd/go/internal/load	0.070s
+ok  	cmd/go/internal/lockedfile	0.211s
+ok  	cmd/go/internal/lockedfile/internal/filelock	0.161s
+ok  	cmd/go/internal/modfetch	0.061s
+ok  	cmd/go/internal/modfetch/codehost	4.537s
+ok  	cmd/go/internal/modfetch/zip_sum_test	0.070s
+ok  	cmd/go/internal/modindex	0.435s
+ok  	cmd/go/internal/modload	0.041s
+ok  	cmd/go/internal/mvs	0.031s
+ok  	cmd/go/internal/par	0.018s
+ok  	cmd/go/internal/str	0.030s
+ok  	cmd/go/internal/test	0.464s
+ok  	cmd/go/internal/toolchain	0.104s
+ok  	cmd/go/internal/vcs	0.177s
+ok  	cmd/go/internal/vcweb	0.128s
+ok  	cmd/go/internal/vcweb/vcstest	4.370s
+ok  	cmd/go/internal/web	0.144s
+ok  	cmd/go/internal/work	0.297s
+ok  	cmd/gofmt	0.067s
+ok  	cmd/internal/archive	4.525s
+ok  	cmd/internal/bootstrap_test	0.027s
+ok  	cmd/internal/buildid	1.218s
+ok  	cmd/internal/cov	2.090s
+ok  	cmd/internal/dwarf	0.176s
+ok  	cmd/internal/edit	0.104s
+ok  	cmd/internal/goobj	0.055s
+ok  	cmd/internal/moddeps	6.322s
+ok  	cmd/internal/notsha256	0.052s
+ok  	cmd/internal/obj	3.121s
+ok  	cmd/internal/obj/arm64	0.477s
+ok  	cmd/internal/obj/loong64	0.016s
+ok  	cmd/internal/obj/ppc64	0.800s
+ok  	cmd/internal/obj/riscv	0.321s
+ok  	cmd/internal/obj/s390x	0.034s
+ok  	cmd/internal/obj/x86	1.310s
+ok  	cmd/internal/objabi	0.276s
+ok  	cmd/internal/pgo	0.008s
+ok  	cmd/internal/pkgpath	0.073s
+ok  	cmd/internal/pkgpattern	0.064s
+ok  	cmd/internal/quoted	0.024s
+ok  	cmd/internal/src	0.050s
+ok  	cmd/internal/test2json	0.667s
+ok  	cmd/link	60.409s
+ok  	cmd/link/internal/benchmark	0.020s
+--- FAIL: TestUndefinedRelocErrors (2.20s)
+    ld_test.go:66: unmatched error: main.defined2: relocation target main.undefined not defined (x1)
+    ld_test.go:66: unmatched error: main.defined1: relocation target main.undefined not defined (x1)
+    ld_test.go:75: unexpected error: main.init.0: relocation target main.undefined not defined (x1)
+FAIL
+FAIL	cmd/link/internal/ld	36.302s
+ok  	cmd/link/internal/loader	0.224s
+ok  	cmd/nm	7.827s
+ok  	cmd/objdump	28.893s
+ok  	cmd/pack	3.596s
+ok  	cmd/pprof	5.154s
+ok  	cmd/relnote	0.040s
+ok  	cmd/trace	0.296s
+ok  	cmd/vet	10.817s
+FAIL
+go tool dist: Failed: exit status 1
+
+Please provide priviledges for a rename of `/usr/lib/go-1.23/bin/go` to `/usr/lib/go-1.23/bin/goftw`
+[sudo] password for user: 
+Done.
+
+make: *** [makefile:18: test] Error 1
